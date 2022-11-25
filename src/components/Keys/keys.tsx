@@ -1,4 +1,4 @@
-import { Container, BoxKey, Key, Delete } from "./style"
+import { Container, BoxKey, Key } from "./style"
 
 export const Keys = () => {
     return (
@@ -7,7 +7,11 @@ export const Keys = () => {
                 <Key>7</Key>
                 <Key>8</Key>
                 <Key>9</Key>
-                <Delete>DEL</Delete>
+                <Key style={{
+                    backgroundColor:"var(--desaturated-dark-blue)",
+                    color:"var(--white)",
+                    fontSize:"16px"
+                }}>DEL</Key>
 
                 <Key>4</Key>
                 <Key>5</Key>
@@ -21,8 +25,21 @@ export const Keys = () => {
 
                 <Key>.</Key>
                 <Key>0</Key>
-                <Key>/</Key>
-                <Key>X</Key>
+                <Key>÷</Key>
+                <Key>x</Key>
+
+                <Key style={{
+                    backgroundColor:"var(--desaturated-dark-blue)",
+                    color:"var(--white)",
+                    fontSize:"16px",
+                    width:"126.67px"
+                }}>RESET</Key>
+                <Key style={{
+                    backgroundColor:"var(--red)",
+                    color:"var(--white)",
+                    fontSize:"24px",
+                    width:"126.67px"
+                }}>=</Key>
             </BoxKey>
         </Container>
     )

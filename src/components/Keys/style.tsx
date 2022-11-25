@@ -33,6 +33,14 @@ export const Key = styled.button`
 
     box-shadow: 0px 4px 0px var(--grayish-orange);
 
+    :nth-child(4), :nth-child(17) {
+        box-shadow: 0px 4px 0px var(--very-dark-blue-2);
+    }
+
+    :nth-child(18) {
+        box-shadow: 0px 4px 0px var(--dark-red);
+    }
+
     &:active {
     box-shadow: none;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
@@ -40,23 +48,5 @@ export const Key = styled.button`
 }
 `
 
-export const Delete = styled.button`
-    width: 60px;
-    height: 35px;
-    background-color: var(--desaturated-dark-blue);
-
-    border: none;
-    border-radius: 5px;
-    font-size: 24px;
-    color: var(--white);
-
-    box-shadow: 0px 4px 0px var(--very-dark-blue-2);
-
-    &:active {
-        box-shadow: none;
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
-        transform: translateY(4px);
-    }
-`
 
 

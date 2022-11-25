@@ -1,4 +1,4 @@
-import { Container, Title, Theme, Text } from "./style"
+import { Container, Title, Theme, Text, Option, Button } from "./style"
 
 export const Header = () => {
     return (
@@ -6,6 +6,9 @@ export const Header = () => {
             <Title>calc</Title>
             <Theme>
                 <Text>theme</Text>
+                <Option>
+                    <Button />
+                </Option>
             </Theme>
         </Container>
     )
