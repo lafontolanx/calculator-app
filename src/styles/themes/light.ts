@@ -16,8 +16,9 @@ const light: DefaultTheme = {
         Key: 'hsl(45, 7%, 89%)',
         KeyShadow: 'hsl(35, 11%, 61%)',
 
-        textColor1: 'hsl(60, 10%, 19%)',
-        textColor2: 'hsl(60, 10%, 19%)'
+        textColor1: 'hsl(0, 0%, 100%)',
+        textColor2: 'hsl(60, 10%, 19%)',
+        textColor3: 'hsl(60, 10%, 19%)'
     }
 }
 

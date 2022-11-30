@@ -10,7 +10,7 @@ export const Container = styled.header`
 `
 
 export const Title = styled.h1`
-    color: ${props => props.theme.colors.textColor1};
+    color: ${props => props.theme.colors.textColor3};
     font-size: 1.2rem;
 `
 
@@ -21,7 +21,7 @@ export const Theme = styled.div`
 `
 
 export const Text = styled.p`
-    color: ${props => props.theme.colors.textColor1};
+    color: ${props => props.theme.colors.textColor3};
     font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 1px;

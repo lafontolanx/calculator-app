@@ -17,7 +17,8 @@ const dark: DefaultTheme = {
         KeyShadow: 'hsl(28, 16%, 65%)',
 
         textColor1: 'hsl(0, 0%, 100%)',
-        textColor2: 'hsl(221, 14%, 31%)'
+        textColor2: 'hsl(221, 14%, 31%)',
+        textColor3: 'hsl(0, 0%, 100%)'
     }
 }
 

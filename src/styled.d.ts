@@ -17,6 +17,7 @@ declare module 'styled-components' {
             
             textColor1: string;
             textColor2: string;
+            textColor3: string;
         };
     }
 }
