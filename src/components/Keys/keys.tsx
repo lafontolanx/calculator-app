@@ -1,6 +1,15 @@
+import { Theme } from "../Header/style"
 import { Container, BoxKey, Key } from "./style"
 
+let color: string;
 export const Keys = () => {
+
+    if (Theme === 'dark') {
+        color = '#fff'
+    } else {
+        color = '#000'
+    }
+
     return (
         <Container>
             <BoxKey>
@@ -8,8 +17,8 @@ export const Keys = () => {
                 <Key>8</Key>
                 <Key>9</Key>
                 <Key style={{
-                    backgroundColor:"var(--desaturated-dark-blue)",
-                    color:"var(--white)",
+                    backgroundColor:color,
+                    color:"{${props => props.theme.colors.textColor1}",
                     fontSize:"16px"
                 }}>DEL</Key>
 
@@ -29,14 +38,14 @@ export const Keys = () => {
                 <Key>x</Key>
 
                 <Key style={{
-                    backgroundColor:"var(--desaturated-dark-blue)",
-                    color:"var(--white)",
+                    backgroundColor:"${props => props.theme.colors.DeleteKey}",
+                    color:"${props => props.theme.colors.textColor1}",
                     fontSize:"16px",
                     width:"126.67px"
                 }}>RESET</Key>
                 <Key style={{
-                    backgroundColor:"var(--red)",
-                    color:"var(--white)",
+                    backgroundColor:"${props => props.theme.colors.EqualKey}",
+                    color:"{${props => props.theme.colors.textColor1}",
                     fontSize:"24px",
                     width:"126.67px"
                 }}>=</Key>

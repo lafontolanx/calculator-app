@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        background: var(--dark-blue);
+        background: ${props => props.theme.colors.Background};
         height: 100vh;
 
         display: flex;
@@ -50,28 +50,6 @@ export const GlobalStyle = createGlobalStyle`
 
         // Text
         --very-dark-yellow: hsl(60, 10%, 19%);
-
-
-        // Theme 3
-        // Background
-        -dark-violet: hsl(268, 75%, 9%);
-        --very-dark-violet: hsl(268, 71%, 12%);
-
-        // Keys
-
-        --dark-violet: hsl(281, 89%, 26%);
-        --vivid-magenta: hsl(285, 91%, 52%);
-
-        --pure-cyan: hsl(176, 100%, 44%);
-        --soft-cyan: hsl(177, 92%, 70%);
-
-        --very-dark-violet-2: hsl(268, 47%, 21%);
-        --dark-magenta: hsl(290, 70%, 36%);
-
-        // Text
-
-        --light-yellow: hsl(52, 100%, 62%);
-        --very-dark-blue-2: hsl(198, 20%, 13%);
     }
     * {
         margin: 0;
