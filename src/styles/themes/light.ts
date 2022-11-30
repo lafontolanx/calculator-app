@@ -9,12 +9,15 @@ const light: DefaultTheme = {
 
         DeleteKey: 'hsl(185, 42%, 37%)',
         DeleteKeyShadow: 'hsl(185, 58%, 25%)',
+        DeleteActiveKey: 'hsl(185, 40%, 56%)',
 
         EqualKey: 'hsl(25, 98%, 40%)',
         EqualKeyShadow: 'hsl(25, 99%, 27%)',
+        EqualActiveKey: 'hsl(25, 100%, 61%)',
 
         Key: 'hsl(45, 7%, 89%)',
         KeyShadow: 'hsl(35, 11%, 61%)',
+        KeyActive: 'hsl(0, 0%, 100%)',
 
         textColor1: 'hsl(0, 0%, 100%)',
         textColor2: 'hsl(60, 10%, 19%)',

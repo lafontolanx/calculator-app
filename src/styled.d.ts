@@ -8,12 +8,18 @@ declare module 'styled-components' {
             Background: string;
             BackgroundKeys: string;
             BackgroundInput: string;
+
             DeleteKey: string;
             DeleteKeyShadow: string;
+            DeleteActiveKey: string;
+
             EqualKey: string;
             EqualKeyShadow: string;
+            EqualActiveKey: string;
+
             Key: string;
             KeyShadow: string;
+            KeyActive: string;
             
             textColor1: string;
             textColor2: string;

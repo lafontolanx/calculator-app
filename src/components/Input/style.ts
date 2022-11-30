@@ -20,10 +20,14 @@ export const Number = styled.input`
     text-align: right;
 
     font-size: 2rem;
-    color: ${props => props.theme.colors.textColor1};
+    color: ${props => props.theme.colors.textColor3};
 
     ::-webkit-inner-spin-button { 
     -webkit-appearance: none;
+    }
+
+    &:focus {
+        outline: none;
     }
     
 `

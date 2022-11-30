@@ -33,6 +33,10 @@ export const Key = styled.button`
 
     box-shadow: 0px 4px 0px ${props => props.theme.colors.KeyShadow};
 
+    transition: all 0.3s;
+
+    cursor: pointer;
+
     :nth-child(4), :nth-child(17) {
         box-shadow: 0px 4px 0px ${props => props.theme.colors.DeleteKeyShadow};
         background-color: ${props => props.theme.colors.DeleteKey};
@@ -51,10 +55,24 @@ export const Key = styled.button`
     }
 
     &:active {
-    box-shadow: none;
+    box-shadow: 0px 2px 0px ${props => props.theme.colors.KeyShadow};
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
-    transform: translateY(4px);
-}
+    transform: translateY(2px);
+    background-color: ${props => props.theme.colors.KeyActive};
+
+    :nth-child(4), :nth-child(17) {
+        background-color: ${props => props.theme.colors.DeleteActiveKey};
+        box-shadow: 0px 2px 0px ${props => props.theme.colors.DeleteKeyShadow};
+    }
+
+    :nth-child(18) {
+        background-color: ${props => props.theme.colors.EqualActiveKey};
+        box-shadow: 0px 2px 0px ${props => props.theme.colors.EqualKeyShadow};
+    }
+    }
+
+
+
 `
 
 
