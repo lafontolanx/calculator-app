@@ -29,7 +29,7 @@ export const Key = styled.button`
     border: none;
     border-radius: 5px;
     font-size: 24px;
-    color: var(--grayish-blue);
+    color: ${props => props.theme.colors.textColor2};
 
     box-shadow: 0px 4px 0px ${props => props.theme.colors.KeyShadow};
 
@@ -51,7 +51,7 @@ export const Key = styled.button`
     :nth-child(18) {
         box-shadow: 0px 4px 0px ${props => props.theme.colors.EqualKeyShadow};
         background-color: ${props => props.theme.colors.EqualKey};
-        color: var(--white);
+        color: ${props => props.theme.colors.textColor1};
     }
 
     &:active {
