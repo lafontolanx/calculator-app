@@ -29,5 +29,7 @@ export const Number = styled.input`
     &:focus {
         outline: none;
     }
+
+    padding-top: .5rem;
     
 `
