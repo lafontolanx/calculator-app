@@ -1,9 +1,9 @@
-import { Container, Number } from "./style"
+import { Container, InputNumber } from "./style"
 
 export const Input = () => {
     return (
         <Container>
-            <Number type="number"/>
+            <InputNumber type="number"/>
         </Container>
     )
 }

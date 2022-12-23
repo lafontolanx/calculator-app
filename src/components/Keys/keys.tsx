@@ -1,12 +1,16 @@
 import { Container, BoxKey, Key } from "./style"
 
 let color: string;
-export const Keys = () => {
+
+interface KeysProps {
+    onButtonClick: any;
+}
+export const Keys = ({ onButtonClick }: KeysProps) => {
 
     return (
         <Container>
             <BoxKey>
-                <Key>7</Key>
+                <Key onClick={onButtonClick}>7</Key>
                 <Key>8</Key>
                 <Key>9</Key>
                 <Key>DEL</Key>

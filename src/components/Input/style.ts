@@ -11,7 +11,7 @@ export const Container = styled.div`
     justify-content: center;
 `
 
-export const Number = styled.input`
+export const InputNumber = styled.input`
     width: 90%;
     height: 60%;
     border-radius: 10px;

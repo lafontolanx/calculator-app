@@ -13,15 +13,19 @@ function App() {
 
   const [theme, setTheme] = useState(light);
 
+  function toggleTheme() {
+    setTheme(theme.title === "light" ? dark : light);
+  }
+
+  function handleInput() {
+    console.log('oi');
+  }
+
   return (
     <ThemeProvider theme={theme}>
-      <Header onChange={
-        checked => {
-          setTheme(checked ? dark : light)
-        }
-      }/>
-      <Input/>
-      <Keys />
+      <Header onChange={toggleTheme}/>
+      <Input />
+      <Keys onButtonClick={handleInput}/>
       <GlobalStyle />
     </ThemeProvider>
   )
